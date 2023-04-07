@@ -1,0 +1,260 @@
+/* ============= GLOBAL CSS =============== */
+:root {
+  /* ============= COLORS =============== */
+  /******** grey /********/
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /******** blue /********/
+  /* light */
+  --blue-light-50: #eef1fa;
+  --blue-light-100: #dce2f4;
+  --blue-light-200: #cbd4ef;
+  --blue-light-300: #b9c5e9;
+  --blue-light-400: #a8b7e4;
+  --blue-light-500: #97a8de;
+  --blue-light-600: #859ad9;
+  --blue-light-700: #748bd3;
+  --blue-light-800: #627dce;
+  --blue-light-900: #516ec8;
+  /* dark */
+  --blue-dark-50: #4963b4;
+  --blue-dark-100: #4158a0;
+  --blue-dark-200: #394d8c;
+  --blue-dark-300: #314278;
+  --blue-dark-400: #293764;
+  --blue-dark-500: #202c50;
+  --blue-dark-600: #18213c;
+  --blue-dark-700: #101628;
+  /******** purple /********/
+  /* light */
+  --purple-light-50: #f8edf5;
+  --purple-light-100: #f2daea;
+  --purple-light-200: #ebc8e0;
+  --purple-light-300: #e5b5d6;
+  --purple-light-400: #dea3cc;
+  --purple-light-500: #d791c1;
+  --purple-light-600: #d17eb7;
+  --purple-light-700: #ca6cad;
+  --purple-light-800: #c459a2;
+  --purple-light-900: #bd4798;
+  /* dark */
+  --purple-dark-50: #aa4089;
+  --purple-dark-100: #97397a;
+  --purple-dark-200: #84326a;
+  --purple-dark-300: #712b5b;
+  --purple-dark-400: #5f244c;
+  --purple-dark-500: #4c1c3d;
+  --purple-dark-600: #39152e;
+  --purple-dark-700: #260e1e;
+  /******** green /********/
+  /* light */
+  --green-light-50: #eefaef;
+  --green-light-100: #dcf4df;
+  --green-light-200: #cbefcf;
+  --green-light-300: #b9e9bf;
+  --green-light-400: #a8e4af;
+  --green-light-500: #97de9f;
+  --green-light-600: #85d98f;
+  --green-light-700: #74d37f;
+  --green-light-800: #62ce6f;
+  --green-light-900: #51c85f;
+  /* dark */
+  --green-dark-50: #49b456;
+  --green-dark-100: #41a04c;
+  --green-dark-200: #398c43;
+  --green-dark-300: #317839;
+  --green-dark-400: #296430;
+  --green-dark-500: #205026;
+  --green-dark-600: #183c1d;
+  --green-dark-700: #102813;
+  /******** red /********/
+  /* light */
+  --red-light-50: #faeeee;
+  --red-light-100: #f4dcdc;
+  --red-light-200: #efcbcb;
+  --red-light-300: #e9b9b9;
+  --red-light-400: #e4a8a8;
+  --red-light-500: #de9797;
+  --red-light-600: #d98585;
+  --red-light-700: #d37474;
+  --red-light-800: #ce6262;
+  --red-light-900: #c85151;
+  /* dark */
+  --red-dark-50: #b44949;
+  --red-dark-100: #a04141;
+  --red-dark-200: #8c3939;
+  --red-dark-300: #783131;
+  --red-dark-400: #642929;
+  --red-dark-500: #502020;
+  --red-dark-600: #3c1818;
+  --red-dark-700: #281010;
+
+  /******** background /********/
+  --grey-background: rgb(244, 244, 244);
+
+  /******** box shadow /********/
+  --shadow-50: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --shadow-100: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --favorite-shadow-200: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  --shadow-300: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --shadow-fancy: rgba(240, 46, 170, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+/******** SELECTORS /********/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--blue-light-50);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+h2,
+p {
+  letter-spacing: 1px;
+}
+
+.btn {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid;
+  text-transform: capitalize;
+  font-weight: 200;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+/* ============= PROJECT CSS =============== */
+
+main {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+h1 {
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 25px;
+  text-align: center;
+}
+.container {
+  /* border: 1px solid blue; */
+  width: 70%;
+  height: auto;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: var(--favorite-shadow-200);
+  border-radius: 10px;
+}
+
+.form {
+  /* border: 1px solid red; */
+  height: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.input-item {
+  width: 80%;
+  height: 24px;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--blue-light-600);
+}
+
+.btn {
+  height: 25px;
+  border: 1px solid var(--blue-dark-50);
+  color: #fff;
+  background-color: var(--blue-dark-50);
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: var(--blue-dark-200);
+}
+
+.list {
+  /* border: 1px solid green; */
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.item-name {
+  letter-spacing: 2px;
+}
+
+.delete {
+  width: 55px;
+  border: 1px solid var(--grey-700);
+  background-color: var(--grey-700);
+  color: #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.delete:hover {
+  background-color: #000;
+}
